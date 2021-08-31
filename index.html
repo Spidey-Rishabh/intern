@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Input Fields</title>
+        <!--Jquery Link-->
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!-- Bootstrap Styling-->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	
+	
+	<!-- custom stylesheet-->
+	<link rel="stylesheet" type="text/css" href="dynamic.css" />
+ 
+	<!-- custom javascript-->
+	<script src="dynamic.js" defer></script>
+ 
+</head>
+ 
+<body>
+  
+    <div class="container">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+                <div class="panel panel-info">
+ 
+                    <div class="panel-heading text-center">
+                   
+                        <h1 class="panel-title">Rishabh Agarwal</h1>
+                    </div>
+ 
+                    <div class="panel-body">
+                        <!-- <form role="form" method="post" action=""> -->
+                            
+                            <div class="list_wrapper">  
+                                <div class="row">
+ 
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+ 
+                                        <div class="form-group">
+                                            Key
+                                            <input name="list1" type="text" placeholder="Key" id="key" class="form-control"/>
+                                            
+                                        </div>
+                                    </div>
+ 
+                                    <div class="col-xs-7 col-sm-7 col-md-7">
+                                        <div class="form-group">
+                                            Values
+                                            <input autocomplete="off" name="list1" id="val" type="text" placeholder="Values" class="form-control"/>
+                                        </div>
+                                    </div> 
+ 
+                                    <div class="col-xs-1 col-sm-1 col-md-1">
+                                        <br>
+                                        <button id="add" class="btn btn-primary list_add_button" type="button">+</button>
+                                    </div>
+                                </div>
+                                <div class="row" id="opt">
+ 
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+ 
+                                        <div class="form-group">
+                                            Key
+                                            <input name="list2" type="text" id="key1" placeholder="Key" class="form-control"/>
+                                            
+                                        </div>
+                                    </div>
+ 
+                                    <div class="col-xs-7 col-sm-7 col-md-7">
+                                        <div class="form-group">
+                                            Values
+                                            <input autocomplete="off" name="list2" id="val1" type="text" placeholder="Values" class="form-control"/>
+                                        </div>
+                                    </div> 
+ 
+                                    <div class="col-xs-1 col-sm-1 col-md-1">
+                                        <br>
+                                        <button id="delete" class="list_remove_button btn btn-danger" type="button">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" id="addVariant" value="Add new variant" class="btn list_add_button">
+                            <input type="button" id="printVariant" value="Create variant combination" class="btn combo">
+                            <br><br>
+
+                            <br><br>
+                            <div class="list_wrapper" id="tableDraw">
+                                
+                            </div>
+                            <br><br>
+
+                            <button id="submit" class="btn save">Submit</button>
+                            <button id="cancel" class="btn save">Cancel</button>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
